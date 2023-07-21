@@ -28,7 +28,7 @@ const createCharacterGroups = (message) => {
         'Reflection Pi': pi,
         'Elon Musk': elon,
         'Bruce Wayne': bruce,
-        'Steve Jobs': steve,
+        'Terrence McKenna': Terrence McKenna,
     };
 
     const newCharacterGroups = [];

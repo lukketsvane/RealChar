@@ -1,10 +1,11 @@
 body {
-  background-color: #02081d;
+  background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  color: #333;
 }
 
 /* CSS for mobile warning message and desktop content */
@@ -26,7 +27,7 @@ body {
 }
 
 #mobile-warning {
-  color:white;
+  color:#333;
 }
 
 #mobile-warning p {
@@ -39,7 +40,7 @@ body {
 }
 
 .header p {
-  color: #cccccc;
+  color: #333;
   font-family: "Prompt", Helvetica;
   font-size: 25px;
   font-weight: 200;
@@ -77,7 +78,7 @@ body {
 .audio-device-label {
   margin-top: 40px;
   margin-bottom: 20px;
-  color: #e0e0e0;
+  color: #333;
 }
 
 .actions {
@@ -99,7 +100,7 @@ body {
 }
 
 .alert {
-  color: white;
+  color: #333;
 }
 
 .copyright,
@@ -109,9 +110,9 @@ body {
 }
 
 .chat-window {
-  background-color: #02081d;
+  background-color: #F5F5F5;
   display: none;
-  color: white;
+  color: #333;
   font-size: 17px;
   width: 100%;
   height: 100%;
@@ -126,12 +127,11 @@ body {
 .select-character {
   font-family: "Prompt", Helvetica;
   font-size: 1rem;
-  border-color: #6785d3;
-  color: #fff;
-  box-shadow: 0 0 10px 0 #6785d3 inset, 0 0 10px 4px #6785d3;
+  border-color: #f8f9fa;
+  color: #333;
   transition: all 150ms ease-in-out;
   cursor: pointer;
-  background-color: transparent;
+  background-color: #f8f9fa;
   padding: 0.6em 2em;
   border-radius: 1.5em;
 }
@@ -140,21 +140,14 @@ body {
 .send-btn:hover,
 .connect:hover,
 .text-btn:hover {
-  box-shadow: 0 0 40px 40px #6785d3 inset, 0 0 0 0 #6785d3;
+  background-color: #5071b8;
   outline: 0;
-}
-
-.talk-btn,
-.send-btn,
-.text-btn {
-  display: none;
 }
 
 .talk-btn[disabled],
 .text-btn[disabled] {
   background-color: #999999;
   cursor: not-allowed;
-  box-shadow: none;
 }
 
 .talk-btn,
@@ -190,7 +183,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  background-color: #bccffe1a;
+  background-color: #F5F5F5;
   border-radius: 50px;
   padding: 8px;
   height: 50px;
@@ -216,7 +209,7 @@ body {
 }
 
 .stop-call {
-  background-color: white;
+  background-color: #F5F5F5;
   border-radius: 50px;
 }
 
@@ -256,7 +249,6 @@ body {
 .call:hover, .icon-instance-node-small{
   filter: brightness(2);
 }
-
 
 footer {
   padding: 10px;
@@ -316,7 +308,7 @@ footer {
 }
 
 .rounded-social-buttons .social-button.twitter {
-  background: #bccffe1a;
+  background: #F5F5F5;
 }
 
 .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
@@ -336,7 +328,7 @@ footer {
 }
 
 .rounded-social-buttons .social-button.github {
-  background: #bccffe1a;
+  background: #F5F5F5;
 }
 
 .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
@@ -346,7 +338,7 @@ footer {
 }
 
 .rounded-social-buttons .social-button.discord {
-  background: #bccffe1a;
+  background: #F5F5F5;
 }
 
 .rounded-social-buttons .social-button.discord:hover, .rounded-social-buttons .social-button.discord:focus {
@@ -402,7 +394,7 @@ body
 }
 
 .radio-btn > i {
-  color: #ffffff;
+  color: #333;
   background-color: #FFDAE9;
   font-size: 16px;
   position: absolute;
@@ -459,30 +451,6 @@ body
   transform: translateX(-50%) scale(0.8);
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-     box-shadow: 0 0 0 0 rgba(173, 216, 230, 0.4);
-  }
-  25% {
-     box-shadow: 0 0 0 10px rgba(173, 216, 230, 0.15);
-  }
-  50% {
-     box-shadow: 0 0 0 20px rgba(173, 216, 230, 0.55);
-  }
-  75% {
-     box-shadow: 0 0 0 10px rgba(173, 216, 230, 0.25);
-  }
-}
-
-.pulse-animation-1 {
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.pulse-animation-2 {
-  animation: pulse 2.2s infinite ease-in-out;
-}
-
 /* media devices select */
 .select-dropdown,
 .select-dropdown * {
@@ -493,13 +461,13 @@ body
 }
 .select-dropdown {
 	position: relative;
-	background-color: #02081d;
+	background-color: #F5F5F5;
 	border-radius: 4px;
 }
 .select-dropdown select {
 	font-size: 1rem;
 	font-weight: normal;
-  color: white;
+  color: #333;
 	max-width: 100%;
 	padding: 8px 24px 8px 10px;
   border-radius: 10px;
@@ -526,14 +494,14 @@ body
 }
 
 /* text input */
-input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: white; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
 :focus{outline: none;}
 .message-input-container{
   float: left; 
   width: 50vw;
   margin: 15px 3%; 
   position: relative;}
-input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: white; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
 .message-input {
   border: 1px solid #ccc; 
   border-radius: 5px;
@@ -541,8 +509,8 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: white; widt
   transition: 0.4s;
   font-size: 20px;
   display: none;
-  color: white;
-  background-color: transparent;
+  color: #333;
+  background-color: #F5F5F5;
 }
 
 .message-input ~ .focus-border:before,
@@ -566,32 +534,6 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: white; widt
   width: 80px;
 }
 
-@keyframes audio-wave {
-  0%{
-    height: 10px;
-    trnsform: translateY(0px);
-    background: #1F4FCC;
-  }
-  25%{
-    height: 40px;
-    trnsform: translateY(-5px);
-    scaleY: 1.7;
-    background:#6785D3;
-  }
-  50%{
-    height: 10px;
-    trnsform: translateY(0px);
-    scaleY: 1.7;
-    background: #C2D3FF;
-  }
-  100%{
-    height: 10px;
-    trnsform: translateY(0px);
-    scaleY: 1.7;
-    background:fixed #EEF3FF;
-  }
-}
-
 .sound-wave{
   display:flex;
   justify-content: center;
@@ -605,26 +547,20 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: white; widt
   display:block;
   border-radius:8px;
   background:#BEC5D9;
-  animation:audio-wave 2.2s infinite ease-in-out
 }
 .sound-wave span:nth-child(2) {
   left:11px;
   background:#FFFFFF;
-  animation-delay:0.2s
 }
 .sound-wave span:nth-child(3){
   left:22px;
-  animation-delay:0.4s
 }
 .sound-wave span:nth-child(4){
   left:33px;
-  animation-delay:0.6s
 }
 .sound-wave span:nth-child(5){
   left:44px;
-  animation-delay:0.8s
 }
 .sound-wave span:nth-child(6){
   left:55px;
-  animation-delay:1s
 }

@@ -2,13 +2,13 @@
   0%{
     height: 10px;
     trnsform: translateY(0px);
-    background: #1F4FCC;
+    background: #f8f9fa;
   }
   25%{
     height: 40px;
     trnsform: translateY(-5px);
     scaleY: 1.7;
-    background:#6785D3;
+    background:#f8f9fa;
   }
   50%{
     height: 10px;

@@ -11,9 +11,9 @@ logger = get_logger(__name__)
 DEBUG = False
 
 config = types.SimpleNamespace(**{
-    'default_voice': '21m00Tcm4TlvDq8ikWAM',
-    'default_female_voice': 'EXAVITQu4vr4xnSDxMaL',
-    'default_male_voice': 'ErXwobaYiN019PkySvjV',
+    'default_voice': 'qCX8XLdsvO0LqRUFaWqy',
+    'default_female_voice': 'qCX8XLdsvO0LqRUFaWqy',
+    'default_male_voice': 'qCX8XLdsvO0LqRUFaWqy',
     'chunk_size': 1024,
     'url': 'https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/stream',
     'headers': {
@@ -36,12 +36,12 @@ class ElevenLabs(Singleton, TextToSpeech):
         super().__init__()
         logger.info("Initializing [ElevenLabs Text To Speech] voices...")
         self.voice_ids = {
-            "Raiden Shogun And Ei": os.environ.get('RAIDEN_VOICE') or config.default_female_voice,
             "Loki": os.environ.get('LOKI_VOICE') or config.default_male_voice,
             "Reflection Pi": os.environ.get('PI_VOICE') or config.default_female_voice,
-            "Elon Musk": os.environ.get('ELON_VOICE') or config.default_male_voice,
-            "Bruce Wayne": os.environ.get('BRUCE_VOICE') or config.default_male_voice,
-            "Steve Jobs": os.environ.get('JOBS_VOICE') or config.default_male_voice
+            "Steve Jobs": os.environ.get('JOBS_VOICE') or config.default_male_voice,
+            "Jordan Peterson": os.environ.get('JORDAN_PETERSON_VOICE') or config.default_male_voice,
+            "Terrence McKenna": os.environ.get('TERRANCE_MCKENNA_VOICE') or config.default_male_voice
+            
         }
 
     def get_voice_id(self, name):
